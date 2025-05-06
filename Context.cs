@@ -1,4 +1,5 @@
 ﻿using StrategyPattern.Sort;
+using System;
 using System.Collections.Generic;
 
 namespace StrategyPattern
@@ -7,13 +8,19 @@ namespace StrategyPattern
     {
         private ISortStrategy _strategy;
 
-        public Context(ISortStrategy strategy) 
-            => _strategy = strategy;
-
         public void SetStrategy(ISortStrategy strategy) 
             => _strategy = strategy;
 
-        public void ExecuteStrategy(List<int> numbers) 
-            => _strategy.Sort(numbers);
+        public void ExecuteStrategy(List<int> numbers)
+        {
+            try
+            {
+                _strategy.Sort(numbers);
+            }
+            catch (NullReferenceException) 
+            {
+                Console.WriteLine(ErrorConstants.SORTING_NOT_SET);    
+            }
+        }
     }
 }
