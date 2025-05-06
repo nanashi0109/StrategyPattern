@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="SortStrategy\BubbleSortStrategy.cs" />
+    <Compile Include="Tools\ConsoleTextConstants.cs" />
+    <Compile Include="SortStrategy\InsertSortStrategy.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortStrategy\QuickSortStrategy.cs" />
+    <Compile Include="SortStrategy\ISortStrategy.cs" />
+    <Compile Include="Tools\ErrorConstants.cs" />
+    <Compile Include="Tools\Strategies.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

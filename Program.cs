@@ -6,7 +6,9 @@ namespace StrategyPattern
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Введите числа через пробел");
+            var app = new App();
+
+            app.Start();
 
             Console.ReadKey();
         }
