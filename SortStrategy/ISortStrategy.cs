@@ -4,6 +4,6 @@ namespace StrategyPattern.Sort
 {
     public interface ISortStrategy 
     {
-        List<int> Sort(List<int> numbers);
+        void Sort(List<int> numbers);
     }
 }
