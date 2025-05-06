@@ -2,11 +2,11 @@
 
 namespace StrategyPattern
 {
-    partial class Program
+    public class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("Введите числа через пробел");
 
             Console.ReadKey();
         }
